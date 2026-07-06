@@ -1,0 +1,1270 @@
+<!DOCTYPE HTML><h2>Gegevensdefinitie</h2><p><b>Deze tekst is normatief.</b><!--SIM-MijnPlan_PDCARegister-0.0.1-1-20260706-20260706-094440 imvertor 4.5.0--></p><section id="global_class_Model_CONTACTMOMENT"><h3>   CONTACTMOMENT</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>CONTACTMOMENT</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_CONTACTMOMENT_Datum">Datum</a>
+                     </td><td>De datum/tijd van het contactmoment.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_CONTACTMOMENT_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_CONTACTMOMENT_Notitie">Notitie</a>
+                     </td><td>Notitie bij het contactmoment.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_CONTACTMOMENT_Status">Status</a>
+                     </td><td>De status van het contactmoment.</td><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_CONTACTMOMENT_Toelichtingstatus">Toelichting status</a>
+                     </td><td>Toelichting bij de status van het contactmoment.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_PLAN">PLAN</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_PLAN_heeft">heeft</a>
+                        
+                        CONTACTMOMENT
+                        [ 0 .. * ]
+                     </td><td>Een plan kent meerdere contactmomenten.
+Een contactmoment hoort bij precies één plan.</td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_PERSOON">PERSOON</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_PERSOON_betreft">betreft</a>
+                        
+                        CONTACTMOMENT
+                        [ 0 .. * ]
+                     </td><td>Een persoon kan meerdere contactmomenten hebben.
+Een contactmoment hoort bij één persoon.</td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_PLAN"><h3>   PLAN</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>PLAN</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Een samenhangend plan waarin doelen, instrumenten en ontwikkelwensen worden geordend.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie plan</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PLAN_Einddatum">Einddatum</a>
+                     </td><td>Einddatum van het plan.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PLAN_Identificatieplan">Identificatie plan</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PLAN_Notitie">Notitie</a>
+                     </td><td>Notitie bij het plan.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PLAN_Redeneinde">Reden einde</a>
+                     </td><td>Reden waarom het plan is beëindigd.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PLAN_Startdatum">Startdatum</a>
+                     </td><td>Startdatum van het plan.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PLAN_Status">Status</a>
+                     </td><td>Status van het plan.</td><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PLAN_Titel">Titel</a>
+                     </td><td>Titel van het plan.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PLAN_Verwijzingdomeinregister">Verwijzing domeinregister</a>
+                     </td><td>Verwijzing naar het domeinregister voor dit plan.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        PLAN
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_PLAN_heeft">heeft</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_CONTACTMOMENT">CONTACTMOMENT</a>
+                        
+                        [ 0 .. * ]
+                     </td><td>Een plan kent meerdere contactmomenten.
+Een contactmoment hoort bij precies één plan.</td></tr><tr><td>
+                        PLAN
+                        [ 1 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PLAN_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                        
+                        [ 0 .. * ]
+                     </td><td>Plan ... doel
+Doel ... plan.</td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_OVERKOEPELENDPLAN">OVERKOEPELEND PLAN</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_OVERKOEPELENDPLAN_">?</a>
+                        
+                        PLAN
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_PLANTYPE">PLANTYPE</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_PLANTYPE_">?</a>
+                        
+                        PLAN
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_MEDEWERKER">MEDEWERKER</a>
+                        
+                        [ 0 .. 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_MEDEWERKER_">?</a>
+                        
+                        PLAN
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_ZAAK">ZAAK</a>
+                        
+                        [ 0 .. 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_ZAAK_">?</a>
+                        
+                        PLAN
+                        [ 0 .. * ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_INSTRUMENTTYPE"><h3>   INSTRUMENTTYPE</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>INSTRUMENTTYPE</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_INSTRUMENTTYPE_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_INSTRUMENTTYPE_Naam">Naam</a>
+                     </td><td>Het type instrument.</td><td>
+                        <a class="link" href="#detail_class_Model_Instrumenttype">Instrumenttype</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        INSTRUMENTTYPE
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENTTYPE_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_INSTRUMENTCATEGORIE">INSTRUMENTCATEGORIE</a>
+                        
+                        [ 1 .. * ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_INSTRUMENT">INSTRUMENT</a>
+                        
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENT_heeft">heeft</a>
+                        
+                        INSTRUMENTTYPE
+                        [ 1 ]
+                     </td><td>Elk instrument heeft één type.
+Een type hoort bij meerdere instrumenten.</td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_PERSOON"><h3>   PERSOON</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>PERSOON</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PERSOON_BSN">BSN</a>
+                     </td><td>BSN voor BRP-koppeling (verplicht voor primaire personen, optioneel voor secundaire).</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PERSOON_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PERSOON_Verwijzingnaarklant">Verwijzing naar klant</a>
+                     </td><td>URN naar de Klant (verplicht voor primaire personen, optioneel voor secundaire).</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PERSOON_Verwijzingnaarpersoonsprofiel">Verwijzing naar persoonsprofiel</a>
+                     </td><td>URN naar het persoonsprofiel (alleen voor primaire personen verplicht).</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        PERSOON
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PERSOON_isgerelateerdaan">is gerelateerd aan</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PERSOON">PERSOON</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        PERSOON
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_PERSOON_wordtnagestreefddoor">wordt nagestreefd door</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        PERSOON
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_PERSOON_betreft">betreft</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_CONTACTMOMENT">CONTACTMOMENT</a>
+                        
+                        [ 0 .. * ]
+                     </td><td>Een persoon kan meerdere contactmomenten hebben.
+Een contactmoment hoort bij één persoon.</td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_INSTRUMENTCATEGORIE"><h3>   INSTRUMENTCATEGORIE</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>INSTRUMENTCATEGORIE</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Instrument kan meerdere categorieën hebben.
+Categorie classificeert meerdere instrumenten.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_INSTRUMENTCATEGORIE_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_INSTRUMENTCATEGORIE_Naam">Naam</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_INSTRUMENTTYPE">INSTRUMENTTYPE</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENTTYPE_">?</a>
+                        
+                        INSTRUMENTCATEGORIE
+                        [ 1 .. * ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_INSTRUMENT">INSTRUMENT</a>
+                        
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENT_heeft">heeft</a>
+                        
+                        INSTRUMENTCATEGORIE
+                        [ 0 .. * ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_INSTRUMENT"><h3>   INSTRUMENT</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>INSTRUMENT</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Middel of interventie.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_INSTRUMENT_Einddatum">Einddatum</a>
+                     </td><td>Einddatum van het instrument.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_INSTRUMENT_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_INSTRUMENT_Resultaat">Resultaat</a>
+                     </td><td>Resultaat van het instrument.</td><td>
+                        <a class="link" href="#detail_class_Model_Resultaat">Resultaat</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_INSTRUMENT_Startdatum">Startdatum</a>
+                     </td><td>Startdatum van het instrument.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_INSTRUMENT_Status">Status</a>
+                     </td><td>Status van het instrument.</td><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_INSTRUMENT_Titel">Titel</a>
+                     </td><td>Titel van het instrument.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        INSTRUMENT
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENT_ondersteunt">ondersteunt</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                        
+                        [ 0 .. * ]
+                     </td><td>Een instrument kan meerdere doelen ondersteunen.
+Een doel kan meerdere instrumenten hebben.</td></tr><tr><td>
+                        INSTRUMENT
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENT_heeft">heeft</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_INSTRUMENTTYPE">INSTRUMENTTYPE</a>
+                        
+                        [ 1 ]
+                     </td><td>Elk instrument heeft één type.
+Een type hoort bij meerdere instrumenten.</td></tr><tr><td>
+                        INSTRUMENT
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENT_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_ZAAK">ZAAK</a>
+                        
+                        [ 0 .. 1 ]
+                     </td><td></td></tr><tr><td>
+                        INSTRUMENT
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENT_heeft">heeft</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_INSTRUMENTCATEGORIE">INSTRUMENTCATEGORIE</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        INSTRUMENT
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENT_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PRODUCT">PRODUCT</a>
+                        
+                        [ 0 .. 1 ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a>
+                        
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_ONTWIKKELWENS_adresseert">adresseert</a>
+                        
+                        INSTRUMENT
+                        [ 0 .. * ]
+                     </td><td>Een instrument kan meerdere ontwikkelwensen adresseren.
+Een ontwikkelwens kan door meerdere instrumenten worden ondersteund.</td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_OVERKOEPELENDPLAN"><h3>   OVERKOEPELEND PLAN</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>OVERKOEPELEND PLAN</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_OVERKOEPELENDPLAN_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_OVERKOEPELENDPLAN_Status">Status</a>
+                     </td><td></td><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_OVERKOEPELENDPLAN_Titel">Titel</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        OVERKOEPELEND PLAN
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_OVERKOEPELENDPLAN_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PLAN">PLAN</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_MEDEWERKER">MEDEWERKER</a>
+                        
+                        [ 0 .. 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_MEDEWERKER_">?</a>
+                        
+                        OVERKOEPELEND PLAN
+                        [ 0 .. * ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_ONTWIKKELWENS"><h3>   ONTWIKKELWENS</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>ONTWIKKELWENS</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Een expliciete ontwikkelbehoefte of ambitie.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_ONTWIKKELWENS_Beschrijving">Beschrijving</a>
+                     </td><td>Beschrijving van de ontwikkelwens.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_ONTWIKKELWENS_Einddatum">Einddatum</a>
+                     </td><td>Einddatum van de ontwikkelwens.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_ONTWIKKELWENS_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_ONTWIKKELWENS_Resultaat">Resultaat</a>
+                     </td><td>Resultaat van de ontwikkelwens.</td><td>
+                        <a class="link" href="#detail_class_Model_Resultaat">Resultaat</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_ONTWIKKELWENS_Startdatum">Startdatum</a>
+                     </td><td>Startdatum van de ontwikkelwens.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_ONTWIKKELWENS_Status">Status</a>
+                     </td><td>Status van de ontwikkelwens.</td><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_ONTWIKKELWENS_Titel">Titel</a>
+                     </td><td>Titel van de ontwikkelwens.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        ONTWIKKELWENS
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_ONTWIKKELWENS_draagtbijaan">draagt bij aan</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                        
+                        [ 1 ]
+                     </td><td>Elke ontwikkelwens ondersteunt exact één doel.
+Een doel kan meerdere ontwikkelwensen hebben.</td></tr><tr><td>
+                        ONTWIKKELWENS
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_ONTWIKKELWENS_heeft">heeft</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_DOELCATEGORIE">DOELCATEGORIE</a>
+                        
+                        [ 1 .. * ]
+                     </td><td>Een ontwikkelwens kan meerdere categorieën hebben.
+Een categorie classificeert meerdere ontwikkelwensen.</td></tr><tr><td>
+                        ONTWIKKELWENS
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_ONTWIKKELWENS_adresseert">adresseert</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_INSTRUMENT">INSTRUMENT</a>
+                        
+                        [ 0 .. * ]
+                     </td><td>Een instrument kan meerdere ontwikkelwensen adresseren.
+Een ontwikkelwens kan door meerdere instrumenten worden ondersteund.</td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_RELATIETYPE"><h3>   RELATIETYPE</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>RELATIETYPE</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_RELATIETYPE_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_RELATIETYPE_Naamrelatietype">Naam relatietype</a>
+                     </td><td>De naam van het relatietype.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        RELATIETYPE
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_RELATIETYPE_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_RELATIE">RELATIE</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_PLANTYPE"><h3>   PLANTYPE</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>PLANTYPE</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PLANTYPE_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_PLANTYPE_Type">Type</a>
+                     </td><td>Het type plan.</td><td>
+                        <a class="link" href="#detail_class_Model_Plantype">Plantype</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        PLANTYPE
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_PLANTYPE_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PLAN">PLAN</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_DOELCATEGORIE"><h3>   DOELCATEGORIE</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>DOELCATEGORIE</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Thematische categorisering van doelen.
+Voorbeelden:
+
+wonen
+werk
+gezondheid</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOELCATEGORIE_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOELCATEGORIE_Naam">Naam</a>
+                     </td><td>Naam van de doelcategorie.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a>
+                        
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_ONTWIKKELWENS_heeft">heeft</a>
+                        
+                        DOELCATEGORIE
+                        [ 1 .. * ]
+                     </td><td>Een ontwikkelwens kan meerdere categorieën hebben.
+Een categorie classificeert meerdere ontwikkelwensen.</td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_DOELTYPE">DOELTYPE</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_DOELTYPE_">?</a>
+                        
+                        DOELCATEGORIE
+                        [ 0 .. * ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_DOELTYPE"><h3>   DOELTYPE</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>DOELTYPE</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOELTYPE_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOELTYPE_Naam">Naam</a>
+                     </td><td>Het type doel.</td><td>
+                        <a class="link" href="#detail_class_Model_Doeltype">Doeltype</a>
+                     </td><td>1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        DOELTYPE
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_DOELTYPE_classificeert">classificeert</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                        
+                        [ 0 .. * ]
+                     </td><td>Elk doel heeft precies één type.
+Een type classificeert meerdere doelen.</td></tr><tr><td>
+                        DOELTYPE
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_DOELTYPE_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_DOELCATEGORIE">DOELCATEGORIE</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_DOEL"><h3>   DOEL</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>DOEL</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Gewenste uitkomst die binnen een plan gerealiseerd moet worden.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td>Identificatie</td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht attributen  </h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 50%;"></colgroup><colgroup style="width: 10%;"></colgroup><colgroup style="width: 10%;"></colgroup><tbody><tr><th scope="col">Attribuutnaam</th><th scope="col">Definitie</th><th scope="col">Formaat</th><th scope="col">Card</th></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOEL_Beschrijving">Beschrijving</a>
+                     </td><td>Beschrijving van het doel.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOEL_Einddatum">Einddatum</a>
+                     </td><td>Einddatum van het doel.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOEL_Identificatie">Identificatie</a>
+                     </td><td></td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOEL_Resultaat">Resultaat</a>
+                     </td><td>Resultaat van het doel.</td><td>
+                        <a class="link" href="#detail_class_Model_Resultaat">Resultaat</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOEL_Startdatum">Startdatum</a>
+                     </td><td>Startdatum van het doel.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOEL_Status">Status</a>
+                     </td><td>Status van het doel.</td><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td><td>0 .. 1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOEL_Titel">Titel</a>
+                     </td><td>Titel van het doel.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>1</td></tr><tr><td>
+                        <a class="link" href="#detail_attribute_Model_DOEL_Toelichtingresultaat">Toelichting resultaat</a>
+                     </td><td>Toelichting bij het resultaat van het doel.</td><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td><td>0 .. 1</td></tr></tbody></table>
+            
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        DOEL
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_DOEL_heeftalshoofddoel">heeft als hoofddoel</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_PLAN">PLAN</a>
+                        
+                        [ 1 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_PLAN_">?</a>
+                        
+                        DOEL
+                        [ 0 .. * ]
+                     </td><td>Plan ... doel
+Doel ... plan.</td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_PERSOON">PERSOON</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_PERSOON_wordtnagestreefddoor">wordt nagestreefd door</a>
+                        
+                        DOEL
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_INSTRUMENT">INSTRUMENT</a>
+                        
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENT_ondersteunt">ondersteunt</a>
+                        
+                        DOEL
+                        [ 0 .. * ]
+                     </td><td>Een instrument kan meerdere doelen ondersteunen.
+Een doel kan meerdere instrumenten hebben.</td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a>
+                        
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_ONTWIKKELWENS_draagtbijaan">draagt bij aan</a>
+                        
+                        DOEL
+                        [ 1 ]
+                     </td><td>Elke ontwikkelwens ondersteunt exact één doel.
+Een doel kan meerdere ontwikkelwensen hebben.</td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_DOELTYPE">DOELTYPE</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_DOELTYPE_classificeert">classificeert</a>
+                        
+                        DOEL
+                        [ 0 .. * ]
+                     </td><td>Elk doel heeft precies één type.
+Een type classificeert meerdere doelen.</td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_MEDEWERKER"><h3>   MEDEWERKER</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>MEDEWERKER</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td> </td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        MEDEWERKER
+                        [ 0 .. 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_MEDEWERKER_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PLAN">PLAN</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        MEDEWERKER
+                        [ 0 .. 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_MEDEWERKER_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_OVERKOEPELENDPLAN">OVERKOEPELEND PLAN</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_PRODUCT"><h3>   PRODUCT</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>PRODUCT</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td> </td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_INSTRUMENT">INSTRUMENT</a>
+                        
+                        [ 0 .. * ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENT_">?</a>
+                        
+                        PRODUCT
+                        [ 0 .. 1 ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_ZAAK"><h3>   ZAAK</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>ZAAK</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Unieke aanduiding</th><td> </td></tr><tr><th scope="row">Indicatie abstract object</th><td>Nee</td></tr></tbody></table>
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        ZAAK
+                        [ 0 .. 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_ZAAK_">?</a>
+                        
+                        
+                           <a class="link" href="#global_class_Model_PLAN">PLAN</a>
+                        
+                        [ 0 .. * ]
+                     </td><td></td></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_INSTRUMENT">INSTRUMENT</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_INSTRUMENT_">?</a>
+                        
+                        ZAAK
+                        [ 0 .. 1 ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="global_class_Model_RELATIE"><h3>Relatieklasse   RELATIE</h3>
+            <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>RELATIE</td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Mnemonic</th><td>  </td></tr><tr><th scope="row">Relatiesoort</th><td>PERSOON is gerelateerd aan PERSOON</td></tr></tbody></table>
+            <h4>Overzicht relaties  </h4>
+               <table style="width: 100%;"><colgroup style="width: 50%;"></colgroup><colgroup style="width: 50%;"></colgroup><tbody><tr><th scope="col">Relatienaam met kardinaliteiten</th><th scope="col">Definitie</th></tr><tr><td>
+                        
+                           <a class="link" href="#global_class_Model_RELATIETYPE">RELATIETYPE</a>
+                        
+                        [ 1 ]
+                        
+                           <a class="link" href="#detail_association_Model_RELATIETYPE_">?</a>
+                        
+                        RELATIE
+                        [ 0 .. * ]
+                     </td><td></td></tr></tbody></table>
+               
+            
+         </section><section id="detail_class_Model_CONTACTMOMENT"><h3>   CONTACTMOMENT</h3>
+            <section id="detail_attribute_Model_CONTACTMOMENT_Datum"><h4>Attribuutsoort details  <a href="#global_class_Model_CONTACTMOMENT">CONTACTMOMENT</a> Datum</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Datum</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>De datum/tijd van het contactmoment.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_CONTACTMOMENT_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_CONTACTMOMENT">CONTACTMOMENT</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>36</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_CONTACTMOMENT_Notitie"><h4>Attribuutsoort details  <a href="#global_class_Model_CONTACTMOMENT">CONTACTMOMENT</a> Notitie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Notitie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Notitie bij het contactmoment.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 1000</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_CONTACTMOMENT_Status"><h4>Attribuutsoort details  <a href="#global_class_Model_CONTACTMOMENT">CONTACTMOMENT</a> Status</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Status</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>De status van het contactmoment.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_CONTACTMOMENT_Toelichtingstatus"><h4>Attribuutsoort details  <a href="#global_class_Model_CONTACTMOMENT">CONTACTMOMENT</a> Toelichting status</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Toelichting status</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Toelichting bij de status van het contactmoment.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 1000</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+         </section><section id="detail_class_Model_PLAN"><h3>   PLAN</h3>
+            <section id="detail_attribute_Model_PLAN_Einddatum"><h4>Attribuutsoort details  <a href="#global_class_Model_PLAN">PLAN</a> Einddatum</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Einddatum</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Einddatum van het plan.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PLAN_Identificatieplan"><h4>Attribuutsoort details  <a href="#global_class_Model_PLAN">PLAN</a> Identificatie plan</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie plan</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>36</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PLAN_Notitie"><h4>Attribuutsoort details  <a href="#global_class_Model_PLAN">PLAN</a> Notitie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Notitie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Notitie bij het plan.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 1000</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PLAN_Redeneinde"><h4>Attribuutsoort details  <a href="#global_class_Model_PLAN">PLAN</a> Reden einde</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Reden einde</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Reden waarom het plan is beëindigd.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 1000</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PLAN_Startdatum"><h4>Attribuutsoort details  <a href="#global_class_Model_PLAN">PLAN</a> Startdatum</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Startdatum</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Startdatum van het plan.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PLAN_Status"><h4>Attribuutsoort details  <a href="#global_class_Model_PLAN">PLAN</a> Status</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Status</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Status van het plan.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PLAN_Titel"><h4>Attribuutsoort details  <a href="#global_class_Model_PLAN">PLAN</a> Titel</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Titel</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Titel van het plan.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 255</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PLAN_Verwijzingdomeinregister"><h4>Attribuutsoort details  <a href="#global_class_Model_PLAN">PLAN</a> Verwijzing domeinregister</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Verwijzing domeinregister</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Verwijzing naar het domeinregister voor dit plan.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 255</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_PLAN_heeft"><h4>Relatiesoort details  <a href="#global_class_Model_PLAN">PLAN</a> heeft</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>heeft</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_CONTACTMOMENT">CONTACTMOMENT</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Een plan kent meerdere contactmomenten.
+Een contactmoment hoort bij precies één plan.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_PLAN_"><h4>Relatiesoort details  <a href="#global_class_Model_PLAN">PLAN</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Plan ... doel
+Doel ... plan.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_INSTRUMENTTYPE"><h3>   INSTRUMENTTYPE</h3>
+            <section id="detail_attribute_Model_INSTRUMENTTYPE_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_INSTRUMENTTYPE">INSTRUMENTTYPE</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>36</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_INSTRUMENTTYPE_Naam"><h4>Attribuutsoort details  <a href="#global_class_Model_INSTRUMENTTYPE">INSTRUMENTTYPE</a> Naam</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Naam</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Het type instrument.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Instrumenttype">Instrumenttype</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_INSTRUMENTTYPE_"><h4>Relatiesoort details  <a href="#global_class_Model_INSTRUMENTTYPE">INSTRUMENTTYPE</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_INSTRUMENTCATEGORIE">INSTRUMENTCATEGORIE</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_PERSOON"><h3>   PERSOON</h3>
+            <section id="detail_attribute_Model_PERSOON_BSN"><h4>Attribuutsoort details  <a href="#global_class_Model_PERSOON">PERSOON</a> BSN</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>BSN</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>BSN voor BRP-koppeling (verplicht voor primaire personen, optioneel voor secundaire).</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>9</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PERSOON_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_PERSOON">PERSOON</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>36</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PERSOON_Verwijzingnaarklant"><h4>Attribuutsoort details  <a href="#global_class_Model_PERSOON">PERSOON</a> Verwijzing naar klant</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Verwijzing naar klant</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>URN naar de Klant (verplicht voor primaire personen, optioneel voor secundaire).</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 255</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PERSOON_Verwijzingnaarpersoonsprofiel"><h4>Attribuutsoort details  <a href="#global_class_Model_PERSOON">PERSOON</a> Verwijzing naar persoonsprofiel</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Verwijzing naar persoonsprofiel</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>URN naar het persoonsprofiel (alleen voor primaire personen verplicht).</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 255</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_PERSOON_isgerelateerdaan"><h4>Relatiesoort details  <a href="#global_class_Model_PERSOON">PERSOON</a> is gerelateerd aan</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>is gerelateerd aan</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PERSOON">PERSOON</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_PERSOON_wordtnagestreefddoor"><h4>Relatiesoort details  <a href="#global_class_Model_PERSOON">PERSOON</a> wordt nagestreefd door</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>wordt nagestreefd door</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_PERSOON_betreft"><h4>Relatiesoort details  <a href="#global_class_Model_PERSOON">PERSOON</a> betreft</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>betreft</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_CONTACTMOMENT">CONTACTMOMENT</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Een persoon kan meerdere contactmomenten hebben.
+Een contactmoment hoort bij één persoon.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_INSTRUMENTCATEGORIE"><h3>   INSTRUMENTCATEGORIE</h3>
+            <section id="detail_attribute_Model_INSTRUMENTCATEGORIE_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_INSTRUMENTCATEGORIE">INSTRUMENTCATEGORIE</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>36</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_INSTRUMENTCATEGORIE_Naam"><h4>Attribuutsoort details  <a href="#global_class_Model_INSTRUMENTCATEGORIE">INSTRUMENTCATEGORIE</a> Naam</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Naam</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>200</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+         </section><section id="detail_class_Model_INSTRUMENT"><h3>   INSTRUMENT</h3>
+            <section id="detail_attribute_Model_INSTRUMENT_Einddatum"><h4>Attribuutsoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> Einddatum</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Einddatum</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Einddatum van het instrument.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_INSTRUMENT_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>36</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_INSTRUMENT_Resultaat"><h4>Attribuutsoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> Resultaat</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Resultaat</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Resultaat van het instrument.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Resultaat">Resultaat</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_INSTRUMENT_Startdatum"><h4>Attribuutsoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> Startdatum</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Startdatum</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Startdatum van het instrument.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_INSTRUMENT_Status"><h4>Attribuutsoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> Status</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Status</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Status van het instrument.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_INSTRUMENT_Titel"><h4>Attribuutsoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> Titel</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Titel</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Titel van het instrument.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 255</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_INSTRUMENT_ondersteunt"><h4>Relatiesoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> ondersteunt</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>ondersteunt</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Een instrument kan meerdere doelen ondersteunen.
+Een doel kan meerdere instrumenten hebben.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_INSTRUMENT_heeft"><h4>Relatiesoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> heeft</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>heeft</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_INSTRUMENTTYPE">INSTRUMENTTYPE</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Elk instrument heeft één type.
+Een type hoort bij meerdere instrumenten.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_INSTRUMENT_"><h4>Relatiesoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_ZAAK">ZAAK</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_INSTRUMENT_heeft"><h4>Relatiesoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> heeft</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>heeft</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_INSTRUMENTCATEGORIE">INSTRUMENTCATEGORIE</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_INSTRUMENT_"><h4>Relatiesoort details  <a href="#global_class_Model_INSTRUMENT">INSTRUMENT</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PRODUCT">PRODUCT</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_OVERKOEPELENDPLAN"><h3>   OVERKOEPELEND PLAN</h3>
+            <section id="detail_attribute_Model_OVERKOEPELENDPLAN_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_OVERKOEPELENDPLAN">OVERKOEPELEND PLAN</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_OVERKOEPELENDPLAN_Status"><h4>Attribuutsoort details  <a href="#global_class_Model_OVERKOEPELENDPLAN">OVERKOEPELEND PLAN</a> Status</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Status</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_OVERKOEPELENDPLAN_Titel"><h4>Attribuutsoort details  <a href="#global_class_Model_OVERKOEPELENDPLAN">OVERKOEPELEND PLAN</a> Titel</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Titel</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 255</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_OVERKOEPELENDPLAN_"><h4>Relatiesoort details  <a href="#global_class_Model_OVERKOEPELENDPLAN">OVERKOEPELEND PLAN</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PLAN">PLAN</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_ONTWIKKELWENS"><h3>   ONTWIKKELWENS</h3>
+            <section id="detail_attribute_Model_ONTWIKKELWENS_Beschrijving"><h4>Attribuutsoort details  <a href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a> Beschrijving</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Beschrijving</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Beschrijving van de ontwikkelwens.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 1000</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_ONTWIKKELWENS_Einddatum"><h4>Attribuutsoort details  <a href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a> Einddatum</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Einddatum</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Einddatum van de ontwikkelwens.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_ONTWIKKELWENS_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_ONTWIKKELWENS_Resultaat"><h4>Attribuutsoort details  <a href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a> Resultaat</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Resultaat</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Resultaat van de ontwikkelwens.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Resultaat">Resultaat</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_ONTWIKKELWENS_Startdatum"><h4>Attribuutsoort details  <a href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a> Startdatum</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Startdatum</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Startdatum van de ontwikkelwens.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_ONTWIKKELWENS_Status"><h4>Attribuutsoort details  <a href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a> Status</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Status</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Status van de ontwikkelwens.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_ONTWIKKELWENS_Titel"><h4>Attribuutsoort details  <a href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a> Titel</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Titel</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Titel van de ontwikkelwens.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 255</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_ONTWIKKELWENS_draagtbijaan"><h4>Relatiesoort details  <a href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a> draagt bij aan</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>draagt bij aan</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Elke ontwikkelwens ondersteunt exact één doel.
+Een doel kan meerdere ontwikkelwensen hebben.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_ONTWIKKELWENS_heeft"><h4>Relatiesoort details  <a href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a> heeft</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>heeft</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_DOELCATEGORIE">DOELCATEGORIE</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Een ontwikkelwens kan meerdere categorieën hebben.
+Een categorie classificeert meerdere ontwikkelwensen.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_ONTWIKKELWENS_adresseert"><h4>Relatiesoort details  <a href="#global_class_Model_ONTWIKKELWENS">ONTWIKKELWENS</a> adresseert</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>adresseert</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_INSTRUMENT">INSTRUMENT</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Een instrument kan meerdere ontwikkelwensen adresseren.
+Een ontwikkelwens kan door meerdere instrumenten worden ondersteund.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_RELATIETYPE"><h3>   RELATIETYPE</h3>
+            <section id="detail_attribute_Model_RELATIETYPE_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_RELATIETYPE">RELATIETYPE</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>36</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_RELATIETYPE_Naamrelatietype"><h4>Attribuutsoort details  <a href="#global_class_Model_RELATIETYPE">RELATIETYPE</a> Naam relatietype</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Naam relatietype</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>De naam van het relatietype.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 100</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_RELATIETYPE_"><h4>Relatiesoort details  <a href="#global_class_Model_RELATIETYPE">RELATIETYPE</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_RELATIE">RELATIE</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_PLANTYPE"><h3>   PLANTYPE</h3>
+            <section id="detail_attribute_Model_PLANTYPE_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_PLANTYPE">PLANTYPE</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_PLANTYPE_Type"><h4>Attribuutsoort details  <a href="#global_class_Model_PLANTYPE">PLANTYPE</a> Type</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Type</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Het type plan.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Plantype">Plantype</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_PLANTYPE_"><h4>Relatiesoort details  <a href="#global_class_Model_PLANTYPE">PLANTYPE</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PLAN">PLAN</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_DOELCATEGORIE"><h3>   DOELCATEGORIE</h3>
+            <section id="detail_attribute_Model_DOELCATEGORIE_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_DOELCATEGORIE">DOELCATEGORIE</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>36</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_DOELCATEGORIE_Naam"><h4>Attribuutsoort details  <a href="#global_class_Model_DOELCATEGORIE">DOELCATEGORIE</a> Naam</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Naam</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Naam van de doelcategorie.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 200</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+         </section><section id="detail_class_Model_DOELTYPE"><h3>   DOELTYPE</h3>
+            <section id="detail_attribute_Model_DOELTYPE_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_DOELTYPE">DOELTYPE</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>36</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_DOELTYPE_Naam"><h4>Attribuutsoort details  <a href="#global_class_Model_DOELTYPE">DOELTYPE</a> Naam</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Naam</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Het type doel.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Doeltype">Doeltype</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_DOELTYPE_classificeert"><h4>Relatiesoort details  <a href="#global_class_Model_DOELTYPE">DOELTYPE</a> classificeert</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>classificeert</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Elk doel heeft precies één type.
+Een type classificeert meerdere doelen.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_DOELTYPE_"><h4>Relatiesoort details  <a href="#global_class_Model_DOELTYPE">DOELTYPE</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_DOELCATEGORIE">DOELCATEGORIE</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_DOEL"><h3>   DOEL</h3>
+            <section id="detail_attribute_Model_DOEL_Beschrijving"><h4>Attribuutsoort details  <a href="#global_class_Model_DOEL">DOEL</a> Beschrijving</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Beschrijving</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Beschrijving van het doel.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 1000</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_DOEL_Einddatum"><h4>Attribuutsoort details  <a href="#global_class_Model_DOEL">DOEL</a> Einddatum</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Einddatum</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Einddatum van het doel.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_DOEL_Identificatie"><h4>Attribuutsoort details  <a href="#global_class_Model_DOEL">DOEL</a> Identificatie</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Identificatie</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>36</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_DOEL_Resultaat"><h4>Attribuutsoort details  <a href="#global_class_Model_DOEL">DOEL</a> Resultaat</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Resultaat</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Resultaat van het doel.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Resultaat">Resultaat</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_DOEL_Startdatum"><h4>Attribuutsoort details  <a href="#global_class_Model_DOEL">DOEL</a> Startdatum</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Startdatum</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Startdatum van het doel.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date­Time</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_DOEL_Status"><h4>Attribuutsoort details  <a href="#global_class_Model_DOEL">DOEL</a> Status</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Status</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Status van het doel.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td> </td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="link" href="#detail_class_Model_Status">Status</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_DOEL_Titel"><h4>Attribuutsoort details  <a href="#global_class_Model_DOEL">DOEL</a> Titel</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Titel</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Titel van het doel.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 255</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_attribute_Model_DOEL_Toelichtingresultaat"><h4>Attribuutsoort details  <a href="#global_class_Model_DOEL">DOEL</a> Toelichting resultaat</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>Toelichting resultaat</td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td>Toelichting bij het resultaat van het doel.</td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. 1</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr><tr><th scope="row">Lengte</th><td>Max. 1000</td></tr><tr><th scope="row">Formaat</th><td>
+                        <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                     </td></tr><tr><th scope="row">Patroon</th><td> </td></tr><tr><th scope="row">Indicatie afleidbaar</th><td>Zie package</td></tr><tr><th scope="row">Waarde afleidbaar</th><td>Nee</td></tr></tbody></table>
+            </section>
+            <section id="detail_association_Model_DOEL_heeftalshoofddoel"><h4>Relatiesoort details  <a href="#global_class_Model_DOEL">DOEL</a> heeft als hoofddoel</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>heeft als hoofddoel</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_DOEL">DOEL</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_MEDEWERKER"><h3>   MEDEWERKER</h3>
+            <section id="detail_association_Model_MEDEWERKER_"><h4>Relatiesoort details  <a href="#global_class_Model_MEDEWERKER">MEDEWERKER</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PLAN">PLAN</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+            <section id="detail_association_Model_MEDEWERKER_"><h4>Relatiesoort details  <a href="#global_class_Model_MEDEWERKER">MEDEWERKER</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_OVERKOEPELENDPLAN">OVERKOEPELEND PLAN</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_ZAAK"><h3>   ZAAK</h3>
+            <section id="detail_association_Model_ZAAK_"><h4>Relatiesoort details  <a href="#global_class_Model_ZAAK">ZAAK</a> ?</h4>
+               <table style="width: 100%;"><colgroup style="width: 30%;"></colgroup><colgroup style="width: 70%;"></colgroup><tbody><tr><th scope="row">Naam</th><td>?</td></tr><tr><th scope="row">Gerelateerd objecttype</th><td>
+                        <a class="link" href="#global_class_Model_PLAN">PLAN</a>
+                     </td></tr><tr><th scope="row">Herkomst</th><td> </td></tr><tr><th scope="row">Definitie</th><td> </td></tr><tr><th scope="row">Herkomst definitie</th><td> </td></tr><tr><th scope="row">Datum opname</th><td> </td></tr><tr><th scope="row">Mogelijk geen waarde</th><td>Nee</td></tr><tr><th scope="row">Indicatie formele historie</th><td>Nee</td></tr><tr><th scope="row">Indicatie in onderzoek</th><td>Nee</td></tr><tr><th scope="row">Aanduiding strijdigheid/nietigheid</th><td> </td></tr><tr><th scope="row">Indicatie kardinaliteit</th><td>0 .. *</td></tr><tr><th scope="row">Indicatie authentiek</th><td>Authentiek</td></tr><tr><th scope="row">Regels</th><td> </td></tr></tbody></table>
+               
+            </section>
+         </section><section id="detail_class_Model_Resultaat"><h3>Enumeratie details  Resultaat</h3>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 20%;"></colgroup><colgroup></colgroup><tbody><tr><th scope="col">Waarde</th><th scope="col">Omschrijving</th></tr><tr><td>Behaald</td><td></td></tr><tr><td>Gefaald</td><td></td></tr></tbody></table>
+         </section><section id="detail_class_Model_Plantype"><h3>Enumeratie details  Plantype</h3>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 20%;"></colgroup><colgroup></colgroup><tbody><tr><th scope="col">Waarde</th><th scope="col">Omschrijving</th></tr><tr><td>Inkomen</td><td></td></tr><tr><td>Persoonlijk plan inburgering en participatie</td><td></td></tr><tr><td>Werk</td><td></td></tr></tbody></table>
+         </section><section id="detail_class_Model_Instrumenttype"><h3>Enumeratie details  Instrumenttype</h3>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 20%;"></colgroup><colgroup></colgroup><tbody><tr><th scope="col">Waarde</th><th scope="col">Omschrijving</th></tr><tr><td>Coaching</td><td></td></tr><tr><td>Financiële ondersteuning</td><td></td></tr><tr><td>Training</td><td></td></tr></tbody></table>
+         </section><section id="detail_class_Model_Doeltype"><h3>Enumeratie details  Doeltype</h3>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 20%;"></colgroup><colgroup></colgroup><tbody><tr><th scope="col">Waarde</th><th scope="col">Omschrijving</th></tr><tr><td>Hoofddoel</td><td></td></tr><tr><td>Subdoel</td><td></td></tr></tbody></table>
+         </section><section id="detail_class_Model_Status"><h3>Enumeratie details  Status</h3>
+            <table style="width: 100%;" class="list"><colgroup></colgroup><tbody><tr><td>
+                     
+                  </td></tr></tbody></table>
+            <table style="width: 100%;" class="list"><colgroup style="width: 20%;"></colgroup><colgroup></colgroup><tbody><tr><th scope="col">Waarde</th><th scope="col">Omschrijving</th></tr><tr><td>Actief</td><td></td></tr><tr><td>Afgerond</td><td></td></tr><tr><td>Geannuleerd</td><td></td></tr></tbody></table>
+         </section>
