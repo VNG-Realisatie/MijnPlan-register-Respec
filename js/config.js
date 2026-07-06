@@ -2,7 +2,7 @@ let respecConfig = {
 //  useLogo: true,
 //  useLabel: true,
 //  license: "eupl",
-  shortName: "MijnPlan (register)",
+  shortName: "MijnPlan-PDCA-register",
   pubDomain: "cim",
 
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
@@ -18,7 +18,7 @@ let respecConfig = {
   //previousPublishDate: "2022-06-24",
   //previousPublishVersion: "0.0.4",
   
-  title: "Informatiemodel MijnPlan (register)",
+  title: "Informatiemodel MijnPlan-PDCA-register",
   // subtitle: "Tevens een voorbeeld van een gegenereerd Respec document",
   // content: {"mermaid": "", "ch01": "informative", "ch02": ""},
   authors:
@@ -26,10 +26,10 @@ let respecConfig = {
       {
         name: "Laurens van der Drift",
         company: "Gemeente Utrecht",
-        companyURL: "https://www.utrechts.nl",
+        companyURL: "https://www.utrecht.nl",
       },
       {
-        name: "Jan van Beek",
+        name: "Jan Verbeek",
         company: "Gemeente Den Haag",
         companyURL: "https://www.denhaag.nl",
       },
